@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>.Address. Contacts. Moto. Etc.
+subtitle: <a href='#'>Affiliations</a>.Address. Contacts. Moto. Etc. دفتر दफ्तर
 
 profile:
   align: right
@@ -18,7 +18,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Shubhanga Pandey is doing his PhD in History at University of California, Los Angeles. He works on modern South Asia, with interests in histories of communication, diplomacy, bureaucracy and writing. He was the chief editor at Himal Southasian, which is currently based in Colombo,Sri Lanka. Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Shubhanga Pandey is doing his PhD in History at University of California, Los Angeles. He works on modern South Asia, with interests in histories of communication, diplomacy, bureaucracy and writing. Before graduate school, he worked for several years as a journalist and was the chief editor of the regional magazine *Himal Southasian*. 
+
+Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
