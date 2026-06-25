@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://shubhangap.github.io/sitemap.xml

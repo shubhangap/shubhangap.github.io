@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=Inter:wght@400;500&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #fafaf8;
+  --text: #1c1c1a;
+  --muted: #7a7060;
+  --accent: #2a4a00;
+  --border: #e0ddd8;
+}
+
+html {
+  font-size: 20px;
+  line-height: 1.75;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 400;
+  padding: 0 1.5rem;
+}
+
+/* ── Layout ─────────────────────────────────── */
+
+.site-container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* ── Nav ─────────────────────────────────────── */
+
+nav {
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 100;
+  padding: 1.4rem 0 1.2rem;
+  display: flex;
+  align-items: baseline;
+  gap: 1.8rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 3.5rem;
+}
+
+.nav-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  margin-right: auto;
+  letter-spacing: 0.01em;
+}
+
+.nav-name:hover {
+  color: var(--accent);
+}
+
+nav a {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--muted);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--text);
+}
+
+/* ── About page ──────────────────────────────── */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 170px;
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 3rem;
+}
+
+.about-photo {
+  width: 170px;
+  height: auto;
+  display: block;
+  border-radius: 2px;
+}
+
+.about-bio h1 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 0.9rem;
+  color: var(--accent);
+}
+
+.about-bio p {
+  color: var(--text);
+  margin-bottom: 1.1rem;
+}
+
+.about-bio p:last-child {
+  margin-bottom: 0;
+}
+
+.about-bio a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.about-bio a:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
+
+.social-links {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem 1.4rem;
+}
+
+.social-links a {
+  font-size: 0.65rem;
+  color: var(--muted);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.social-links a:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
+
+/* ── Writing page ────────────────────────────── */
+
+.writing-section {
+  margin-bottom: 3.2rem;
+}
+
+.writing-section h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.writing-list {
+  list-style: none;
+}
+
+.writing-list li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+.writing-list li:last-child {
+  border-bottom: none;
+}
+
+.writing-list a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.writing-list a:hover {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.writing-list .pub-meta {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+
+.lang-note {
+  font-size: 0.7rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-left: 0.3rem;
+}
+
+/* ── Blog page ───────────────────────────────── */
+
+.blog-content {
+  max-width: 560px;
+}
+
+.daftar-logo {
+  width: 160px;
+  height: auto;
+  border-radius: 0;
+}
+
+.blog-content h1 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.blog-content p {
+  color: var(--text);
+  margin-bottom: 1.1rem;
+}
+
+.blog-link {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+}
+
+.blog-link:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
+
+/* ── Research page ───────────────────────────── */
+
+.research-section {
+  margin-bottom: 3.2rem;
+}
+
+.research-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.research-title {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin-bottom: 1.4rem;
+  color: var(--accent);
+}
+
+.research-body p {
+  margin-bottom: 1.1rem;
+  color: var(--text);
+}
+
+.research-body p:last-child {
+  margin-bottom: 0;
+}
+
+.research-body a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.research-body a:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
+
+.chapter-list {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.chapter-list dt {
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 0.3rem;
+}
+
+.chapter-list dd {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.65;
+  border-left: 2px solid var(--border);
+  padding-left: 0.9rem;
+  margin-left: 0;
+}
+
+/* ── Research image strip ────────────────────── */
+
+.research-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.research-images img {
+  width: 100%;
+  height: 155px;
+  object-fit: cover;
+  display: block;
+  border-radius: 2px;
+}
+
+/* ── Writing page two-column layout ──────────── */
+
+.writing-layout {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 0 2.5rem;
+  align-items: stretch;
+}
+
+.writing-images-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.writing-images-col img {
+  width: 170px;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+  border-radius: 2px;
+}
+
+/* ── PDF links (writing page) ────────────────── */
+
+.pub-links {
+  margin-top: 0.25rem;
+}
+
+.pdf-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.pdf-link:hover {
+  color: var(--text);
+  border-color: var(--text);
+}
+
+.pdf-unavailable {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--border);
+  cursor: default;
+  user-select: none;
+}
+
+/* ── Footer ──────────────────────────────────── */
+
+footer {
+  margin-top: 5rem;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+
+/* ── Responsive ──────────────────────────────── */
+
+@media (max-width: 580px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-photo {
+    width: 140px;
+    order: -1;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .writing-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .writing-images-col {
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 0.4rem;
+    margin-bottom: 2rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .writing-images-col::-webkit-scrollbar {
+    display: none;
+  }
+
+  .writing-images-col img {
+    width: 140px;
+    height: 100px;
+    flex-shrink: 0;
+  }
+}
